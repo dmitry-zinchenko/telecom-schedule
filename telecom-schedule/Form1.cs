@@ -16,5 +16,19 @@ namespace telecom_schedule
         {
             InitializeComponent();
         }
+
+        private void buttonUniform_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var uniformWindow = new UniformScheduleWindow();
+            uniformWindow.Show();
+        }
+
+        private void buttonIrregular_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var irregularWindow = new IrregularScheduleWindow();
+            irregularWindow.Show();
+        }
     }
 }
